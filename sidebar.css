@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 140;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(250, 52, 144, 0.651);
+    transition: 0.5s;
+    padding-top: 60px;
+
+    margin: 0 auto;
+    float: left;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(252, 188, 178);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: rgb(252, 230, 243);
+  }
+  
+
+  .sidenav .current {    
+    background-color: rgba(247, 154, 33, 0.774)
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

@@ -1,0 +1,23 @@
+body{
+    background: #fece0c;
+}
+
+
+p{
+    position: absolute;
+    padding-left: 140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(253, 222, 222);
+    font-size: 40pt;
+}
+
+img{
+    position: absolute;
+    padding-left: 140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

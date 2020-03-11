@@ -1,0 +1,46 @@
+<html>
+<head>
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="contact.css">
+    <script type="text/javascript" src="sidebar.js"></script>
+    <script src="contact.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+
+<aside>
+      <ul id="mySidenav" class="sidenav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="form.html">Form</a>
+          <a class="current" href="contact.html">Contact</a>
+      </ul>
+    </aside>
+
+
+<section>
+<div class="wrapper">
+  <h2> contact us </h2>
+  <div id="error_message"></div>
+  <form id="myform" onsubmit="return validation()">
+    <div class="input_field">
+      <input type="text" placeholder="Name" id="name">
+    </div>
+    <div class="input_field">
+      <input type="text" placeholder="Email" id="email">
+    </div>
+    <div class="input_field">
+      <textarea id="message" placeholder="Message"></textarea>
+    </div>
+    <div class="btn">
+      <input type="submit" id="msgSubmit">
+    </div>
+  </form> 
+</div>
+</section>  
+
+</body>
+<script></script>
+</html>
+
+

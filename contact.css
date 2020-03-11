@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    background: #fece0c;
+}
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    max-width: 700px;
+    width: 100%;
+    max-height: 450px;
+    height: 100%;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 4px 4px 2px rgb(253, 114, 179);
+}
+
+.wrapper h2 {
+    letter-spacing: 3px;
+    color: #332902;
+    grid-column-start: 1;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 200px 210px;
+    grid-template-rows: 50px 50px 200px 40px;
+    grid-gap: 10px;
+}
+
+.wrapper .input_field {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-end: span 1;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea {
+   width: 200%;
+   height: 90%;
+   border: 2px solid #e0e0e0;
+   padding-left: 6px;
+   padding-top: 10px;
+   font-size: 20px;
+}
+
+.wrapper textarea {
+    height: 100%;
+    resize: none;
+    padding: 6px;
+    font-size: 15px;
+}
+.wrapper .btn input[type="submit"]{
+    border: 0;
+    margin-left: 32px;
+    width: 90%;
+    margin-top: 10px;
+    background: #fece0c;
+    padding: 10px;
+    color: #332902;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.wrapper .btn{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.wrapper #error_message{
+    margin-bottom: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 0px;
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.5s ease;
+    background: #fe8b8e;
+}
