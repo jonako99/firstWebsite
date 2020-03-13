@@ -13,6 +13,7 @@ function validation(){
     var error_message = document.getElementById("error_message");
     var text;
 
+
     error_message.style.padding = "10px";
     card[0].style.maxHeight = "500px";
 
@@ -49,16 +50,23 @@ function validation(){
     }
     $(error_message).hide();
     card[0].style.maxHeight = "450px";
-    alert("Your message has been sent.");
-    wait(5000);
-    console.log('hehe');
     return false;
 }
 
 function go(){
     let messages = [];
     const addMessage = (ev)=>{
-        console.log('fejwiao');
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+    if(name.length<1) {
+        return
+    } else if (email.indexOf("@") == -1){
+        return
+    } else if (message.length<1){
+        return
+    }
+    else {
         ev.preventDefault();
         let msg = {
             name: document.getElementById('name').value,
@@ -72,11 +80,13 @@ function go(){
 
         //saving to localStorage
         localStorage.setItem('MyMessages', JSON.stringify(messages));
+        alert("Your message has been sent.");
     }
+        
+}
 
-    document.addEventListener('DOMContentLoaded', ()=>{
-        document.getElementsById('msgSubmit').addEventListener('click', addMessage);
-    })
+document.getElementById('msgSubmit').addEventListener('click', addMessage, false);
+
 
 }
 window.onload = go;
