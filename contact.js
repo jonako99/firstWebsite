@@ -1,10 +1,3 @@
-function wait(ms){
-    var start = new Date().getTime();
-    var end = start;
-    while(end < start + ms) {
-      end = new Date().getTime();
-   }
- }
 function validation(){
     var card = document.getElementsByClassName("wrapper");
     var name = document.getElementById("name").value;
